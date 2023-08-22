@@ -1,0 +1,71 @@
+.header {
+  width: 100%;
+  height: 12vw;
+}
+/* 以下是能够渲染提供的HTML代码的相关CSS样式 */
+.change-bar {
+  height: 30px;
+  background-color: #404040;
+  color: white;
+}
+
+.h-content-change {
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.check {
+  margin-top: 0;
+  width: 200px;
+  display: none;
+}
+
+.check a {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.check a:hover {
+  text-decoration: underline;
+}
+
+.search {
+  background-color: #db4a33;
+  height: 30px;
+}
+
+.search input {
+  background: none;
+  border: none;
+  height: 30px;
+  color: white;
+}
+
+.search .sub-btn {
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.logo-bar {
+  background: #ffffff;
+}
+
+.logo-img {
+  height: 65px;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.motto-img {
+  float: right;
+  height: 50px;
+  margin-top: 27px;
+  margin-right: 200px;
+}

@@ -1,0 +1,12 @@
+.swiper {
+  --swiper-navigation-size: 1.7vw;
+}
+#swiper1 .swiper-button-prev,
+#swiper1 .swiper-button-next {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color: rgba(255, 255, 255, 0.7) !important  ;
+  border-radius: 50% !important;
+  width: 3.5vw !important;
+  height: 3.5vw !important;
+  margin: 1vw;
+}
