@@ -1,3 +1,4 @@
+
 import Header from '@/components/header'
 import Teacher from '@/components/teacher'
 // import NewsPart from '@/components/'

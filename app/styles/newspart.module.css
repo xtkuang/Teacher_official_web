@@ -1,0 +1,93 @@
+.bgc{
+    position: absolute;
+    top: 146vh;
+    left: 0;
+    width: 100%;
+    height: 86vh;
+    background-color: #C7D9EF;
+    overflow: hidden;
+}
+.ellibgc{
+    overflow: hidden;
+    z-index: 499;
+    background-color: #f2f6fa;
+    position: absolute;
+    top: -17.5vh;
+    left: -50%;
+    width: 200%;
+    border-radius: 50% / 50%;
+    height: 100vh;
+ }
+.news{
+    z-index: 500;
+    width: 100%;
+    height: 84vh;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    z-index: 500;
+    width: 100%;
+    height:16.5vh;
+    display: flex;
+    flex-direction: row; 
+    
+}
+.titleicon{
+    margin:43px 12px auto 41vw; 
+    width: 40px;
+    height: 45px;
+}
+.word{
+    font-family: "PingFang SC";
+    font-size: 4vh;
+    color: #173885;
+    margin: 42px 15px auto 0;
+    font-weight: 800;
+}
+.Engword{
+    margin-top: 60px;
+    
+    font-size: 15px;
+    color: #999;
+}
+.content{
+    z-index: 500;
+    width: 65.4vw;
+    height: 68.5vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    height: 6vh;
+    width: 100%;
+    border-bottom: 2px solid #E6E5EB;
+    display: flex;
+    background-color: #fff;
+    flex-direction: row;
+    padding: 0 8vw;
+}
+.subnav{
+    
+    list-style-type: none;
+    height: 36px;
+    margin-top: 15px;
+    flex: 4;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+.subnav:hover{
+    color: #0F7BDE;
+    cursor: pointer;
+}
+.subnav:hover::after{
+    cursor: pointer;
+    content: '';
+    width: 30%;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 2px solid #0F7BDE;
+}
