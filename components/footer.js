@@ -18,20 +18,21 @@ export default function Footer () {
             <p>党委宣传部制作维护 设计：汤程心</p>
             <p>推荐使用Google浏览器、火狐浏览器、360浏览器（极速模式）</p>
             <p>Copyright© 2010 杭州电子科技大学版权所有 All right reserved</p>
+            <div style={{ textAlign: 'center', marginTop: '30px', color: 'white', width: "100%" }}>
+              <a style={{ color: '#c8ffff', textDecoration: 'none' }} rel="noreferrer" target="_blank" href="https://beian.miit.gov.cn/">
+                浙ICP备12028388号-2
+              </a>
+            </div>
           </div>
           <div className="dingyue">
-            <img width="75" height="75" src="/dingyue.png" />
+            <img src="/dingyue.png" />
             <span className="df-text">杭电官方微博</span>
           </div>
           <div className="fuwu">
-            <img width="75" height="75" src="/fuwu.jpg" />
+            <img src="/fuwu.jpg" />
             <span className="df-text">杭电官方微信</span>
           </div>
-          <div style={{ textAlign: 'center', marginTop: '30px', color: 'white' }}>
-            <a style={{ color: '#c8ffff', textDecoration: 'none' }} rel="noreferrer" target="_blank" href="https://beian.miit.gov.cn/">
-              浙ICP备12028388号-2
-            </a>
-          </div>
+
         </div>
       </div>
     </>

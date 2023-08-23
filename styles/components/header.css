@@ -4,31 +4,35 @@
 }
 /* 以下是能够渲染提供的HTML代码的相关CSS样式 */
 .change-bar {
-  height: 30px;
+  height: 2.3438vw;
   background-color: #404040;
   color: white;
+  display: flex;
 }
 
 .h-content-change {
-  width: 1000px;
+  width: 78.125vw;
   text-align: center;
   margin: 0 auto;
-  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 3.125vw;
 }
 
 .check {
   margin-top: 0;
-  width: 200px;
+  width: 15.625vw;
   display: none;
 }
 
 .check a {
   display: inline-block;
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 0.3906vw;
+  margin-left: 0.3906vw;
   text-decoration: none;
   color: white;
-  font-size: 12px;
+  font-size: 0.9375vw;
 }
 
 .check a:hover {
@@ -36,36 +40,46 @@
 }
 
 .search {
+  width: 20%;
   background-color: #db4a33;
-  height: 30px;
+  height: 2.3438vw;
 }
 
 .search input {
   background: none;
   border: none;
-  height: 30px;
+  height: 2.3438vw;
   color: white;
 }
 
 .search .sub-btn {
-  float: left;
-  margin-top: 5px;
-  margin-right: 5px;
+  /* float: left; */
+  width: 1vw;
+  margin-top: 0.3906vw;
+  margin-right: 0.3906vw;
 }
 
+.search .sub-btn {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background: url(/search.png) no-repeat;
+  margin-left: 10px;
+  cursor: pointer;
+}
 .logo-bar {
   background: #ffffff;
 }
 
 .logo-img {
-  height: 65px;
-  margin-top: 20px;
-  margin-left: 55px;
+  height: 5.0781vw;
+  margin-top: 1.5625vw;
+  margin-left: 4.2969vw;
 }
 
 .motto-img {
   float: right;
-  height: 50px;
-  margin-top: 27px;
-  margin-right: 200px;
+  height: 3.9063vw;
+  margin-top: 2.1094vw;
+  margin-right: 15.625vw;
 }
