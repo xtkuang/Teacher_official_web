@@ -1,16 +1,22 @@
-import styles from '@/styles/components/teacher.module.css'
+import styles from '../styles/components/teacher.module.css'
 import { useState } from 'react'
-
+function Toteacher (num) {
+  window.location.href = 'https://hdums.hdu.edu.cn/home?num=' + encodeURIComponent(num)
+}
 function wrapTextWithLineBreaks (text, maxLineLength) {
+  // alert("")
   const words = text.split(' ')
   let currentLine = ''
   const lines = []
-
+  console.log("words", words)
   for (const word of words) {
-    if (currentLine.length + word.length <= maxLineLength) {
-      currentLine += (currentLine.length > 0 ? ' ' : '') + word
+
+    if (currentLine.length + word.length < maxLineLength) {
+      // alert("")
+      currentLine += (currentLine.length >= 0 ? ' ' : '') + word
     } else {
-      lines.push(currentLine)
+      currentLine.length !== 0 ?
+        lines.push(currentLine) : currentLine = ''
       currentLine = word
     }
   }
@@ -18,16 +24,16 @@ function wrapTextWithLineBreaks (text, maxLineLength) {
   if (currentLine.length > 0) {
     lines.push(currentLine)
   }
-
+  console.log("line", lines)
   return lines.join('\n')
 }
 export default function TeacherItem (props) {
   const { parameter } = props
-  const { MaxwordsPerline, setMaxwordsPerline } = useState(20)
-  const keywordArry = wrapTextWithLineBreaks(parameter.keyword, MaxwordsPerline)
+  const { MaxwordsPerline, setMaxwordsPerline } = useState(25)
+  const keywordArry = wrapTextWithLineBreaks(parameter.keyword, 22)
   return (
     <div className={styles.TeacherItemContainer}>
-      <div id='top' className={styles.top}>
+      <div id='top' className={styles.top} onClick={() => Toteacher(parameter.num)}>
         <div id='left' className={styles.left}>
           <img id='img' src={"data:image/jpeg;base64," + parameter.picture_b64} alt="" className={styles.photo} />
           <div id='base' className={styles.base}>
@@ -42,7 +48,7 @@ export default function TeacherItem (props) {
         </div>
       </div>
       <div id='cut' className={styles.cutOff}></div>
-      <div id='tag' className={styles.tag}>{keywordArry}</div>
+      <div id='tag' className={styles.tag} onClick={() => Toteacher(parameter.num)}>{keywordArry}</div>
       <div id='cutr' className={styles.cutOff}></div>
       <div id='prof' className={styles.profile}>{parameter.intro}</div>
     </div>

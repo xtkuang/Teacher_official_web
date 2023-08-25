@@ -8,64 +8,45 @@
   background-color: #404040;
   color: white;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .h-content-change {
-  width: 78.125vw;
-  text-align: center;
-  margin: 0 auto;
+  /* width: 78.125vw; */
+  /* text-align: center; */
+  /* margin: 0 auto; */
   display: flex;
-  flex-direction: row;
-  justify-content: end;
-  height: 3.125vw;
-}
-
-.check {
-  margin-top: 0;
-  width: 15.625vw;
-  display: none;
-}
-
-.check a {
-  display: inline-block;
-  margin-top: 0.3906vw;
-  margin-left: 0.3906vw;
-  text-decoration: none;
-  color: white;
-  font-size: 0.9375vw;
-}
-
-.check a:hover {
-  text-decoration: underline;
+  flex-direction: row-reverse;
+  /* justify-content: end; */
+  /* height: 3.125vw; */
+  position: relative;
+  /* width: 10vw; */
+  right: 7vw;
+  height: 100%;
 }
 
 .search {
-  width: 20%;
   background-color: #db4a33;
-  height: 2.3438vw;
 }
-
+.search form {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
 .search input {
   background: none;
   border: none;
-  height: 2.3438vw;
-  color: white;
+  outline: none;
+  /* width: 90%; */
 }
 
 .search .sub-btn {
-  /* float: left; */
-  width: 1vw;
-  margin-top: 0.3906vw;
-  margin-right: 0.3906vw;
-}
-
-.search .sub-btn {
-  float: right;
-  width: 20px;
-  height: 20px;
   background: url(/search.png) no-repeat;
+  width: 2vw;
+  margin-right: 2px;
   margin-left: 10px;
-  cursor: pointer;
+  margin-top: 3px;
+  /* cursor: pointer; */
 }
 .logo-bar {
   background: #ffffff;
@@ -78,8 +59,12 @@
 }
 
 .motto-img {
-  float: right;
   height: 3.9063vw;
   margin-top: 2.1094vw;
   margin-right: 15.625vw;
+}
+.h-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

@@ -1,0 +1,128 @@
+.bgc {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #c7d9ef;
+  /* background-color: #f2f6fa; */
+  overflow: hidden;
+}
+/*蓝色背景样式*/
+.ellibgc {
+  overflow: hidden;
+  /* z-index: 499; */
+  background-color: #f2f6fa;
+  position: absolute;
+  /* top: -17 0.5vh; */
+  left: -50%;
+  width: 200%;
+
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 100vh;
+}
+.news {
+  z-index: 500;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  z-index: 700;
+  width: 100%;
+
+  margin: 3.5vw 0 2vw 0;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.at {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  color: #173885;
+}
+.ctitle {
+  color: rgb(149, 167, 243) e;
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin: 0 0.8vw 0 1vw;
+}
+.stitle {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1vw;
+  position: relative;
+}
+.content {
+  z-index: 500;
+  /* width: 65.4vw; */
+  /* width: 80vw; */
+  /* height: 800px !important; */
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.navi {
+  /* height: 6vh; */
+  /* width: 100%; */
+  border-bottom: 2px solid #e6e5eb;
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 0 8vw; */
+}
+.subnav {
+  list-style-type: none;
+  height: 36px;
+
+  margin-top: 15px;
+
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.subnav:hover {
+  color: #0f7bde;
+  cursor: pointer;
+}
+.subnav:hover::after {
+  cursor: pointer;
+  content: '';
+  width: 30%;
+  height: 7px;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid #0f7bde;
+}
+.content2 {
+  height: 800px !important;
+}
+.active {
+  color: #0f7bde;
+  cursor: pointer;
+}
+.active::after {
+  cursor: pointer;
+  content: '';
+  width: 30%;
+  height: 7px;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid #0f7bde;
+}
+.container {
+  min-height: 40vw;
+  transition: all 0.3s;
+}
+.pagein {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.pageout {
+  opacity: 0;
+  transform: translateY(10px);
+}

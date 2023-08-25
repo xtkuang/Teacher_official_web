@@ -19,5 +19,9 @@
     "styled-components": "^6.0.7",
     "swiper": "^9.2.3",
     "tailwindcss": "3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.3",
+    "@types/react": "18.2.21"
   }
 }

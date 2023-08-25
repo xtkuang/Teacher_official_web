@@ -1,0 +1,19 @@
+.content {
+  /* width: 65.4vw; */
+  width: 80vw;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 1.5vw;
+  display: flex;
+  flex-direction: column;
+}
+.content1 {
+  display: flex;
+  border-bottom: 2px solid #e6e5eb;
+  height: 14vw;
+  align-items: end;
+  justify-content: space-between;
+}
+.content2 {
+}

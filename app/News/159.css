@@ -1,0 +1,7 @@
+.wp_articlecontent, .wp_articlecontent p { text-indent: 2em; font-family: Arial; font-size: 15px; line-height: 36px; color: rgb(51, 51, 51); }
+.wp_articlecontent img { position: relative; left: -17px; width: 640px; }
+.wp_articlecontent table { margin-bottom: 10px; border-collapse: collapse; display: table; }
+.wp_articlecontent table td { background: white; padding: 5px 10px; border: 1px solid rgb(221, 221, 221); }
+.wp_articlecontent a { text-decoration: none; color: rgb(51, 51, 51); }
+.wp_articlecontent a:hover { text-decoration: underline; color: rgb(204, 0, 0); }
+.wp_articlecontent a:visited { }

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- For IE top version load-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 双核浏览器条件下 默认用极速核 -->
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="maximum-scale=1, user-scalable=yes, width=device-width">
+    <meta name="keywords" content="杭电,新闻,杭电新闻,教育,浙江重点大学">
+    <meta name="description" content="杭州电子科技大学,浙江重点大学,重点大学,综合性大学... 红色家园 教工之家 杭电青年 学生会 杭电校报 杭电之声 国际合作交流 学生交流。">
+
+    <!-- CSS Code -->
+
+    <link type="text/css" href="./system.css" rel="stylesheet" />
+    <link type="text/css" href="./1.css" rel="stylesheet" />
+    <link type="text/css" href="./18.css" rel="stylesheet" />
+    <link type="text/css" href="./sudyNav.css" rel="stylesheet" />
+    <link type="text/css" href="./datepicker.css" rel="stylesheet" />
+    <link type="text/css" href="./simplenews.css" rel="stylesheet" />
+
+    <script language="javascript" src="./sudy-jquery-autoload.js" jquery-src="./jquery-2.x.min.js" sudy-wp-context=""
+        sudy-wp-siteId="27"></script>
+    <script language="javascript" src="./jquery-migrate.min.js"></script>
+    <script language="javascript" src="./jquery.sudy.wp.visitcount.js"></script>
+    <script type="text/javascript" src="./jquery.sudyNav.js"></script>
+    <script type="text/javascript" src="./layer.min.js"></script>
+    <script type="text/javascript" src=./jquery.datepicker.js"></script>
+    <script type="text/javascript" src="./datepicker_lang_HK.js"></script>
+    <link rel="stylesheet" href="./web_style.css" type="text/css">
+    <link rel="stylesheet" href="./general_find.css" type="text/css">
+    <!-- JavaScript Code -->
+    <script type="text/javascript" src="./extends.js"></script>
+    <script type="text/javascript" src="./pagination.js"></script>
+    <script type="text/javascript" src="./search2.js"></script>
+
+</head>
+
+<body bgcolor="#fff">
+    <!-- 主要内容 -->
+    <div class="main">
+        <div class='t-top' frag="窗口01">
+
+            <div class='c'>
+
+
+                <h6><a href="https://www.hdu.edu.cn/">杭电首页</a></h6>
+
+
+            </div>
+
+        </div>
+        <div class="m-wrap">
+            <div class='c header'>
+                <div class='logo fl' frag="窗口1" portletmode="simpleSiteAttri">
+
+                    <a href='/news/main.htm' title="返回新闻网首页"><img border='0' src='./logo.png' /></a>
+
+                </div>
+                <div class='news fl'></div>
+                <div class='fr'>
+                    <p id="lunar"></p>
+                    <script src="/calendar.js"></script>
+                    <script>
+                        var calendar = showCal()
+                        $("#lunar").before(calendar);
+                    </script>
+                </div>
+            </div>
+            <div class="f-nav c" style='height: 60px;'>
+                <div frag="窗口2">
+
+
+                    <ul>
+
+                        <li class=""><a href="https://www.hdu.edu.cn/news/main.htm">网站首页</a></li>
+
+                        <li class=""><a href="https://www.hdu.edu.cn/news/bmjj/list.htm">部门简介</a></li>
+
+                        <li class=""><a href="https://www.hdu.edu.cn/news/hdxw/list.htm">杭电新闻</a></li>
+
+                        <li class=""><a href="https://www.hdu.edu.cn/news/llxx/list.htm">主题教育</a></li>
+
+                        <li class=""><a href="https://www.hdu.edu.cn/news/gzzd/list.htm">规章制度</a></li>
+
+                        <li class=""><a href="https://www.hdu.edu.cn/news/wsbs/list.htm">网上办事</a></li>
+
+                        <li class=""><a href="https://www.hdu.edu.cn/news/bmtz/list.htm">部门通知</a></li>
+
+                        <li class=""><a
+                                href="http://zhanqun.hdu.edu.cn/_web/_plugs/_artContribute/web/contributeArtFrame.jsp?type=1&siteFolderId=30091&_p=YXM9MjcmdD00NTUmcD0xJm09TiY_">在线投稿</a>
+                        </li>
+
+                        <li class=""><a href="http://zhanqun.hdu.edu.cn/login.jsp">在线审核</a></li>
+
+                    </ul>
+
+
+                </div>
+                <!--<input placeholder='请输入您想要的内容'maxlength='100'>-->
+                <div class="searchbox" frag="窗口03" portletmode="search" id='find'>
+                    <!--搜索组件-->
+                    <div class="wp-search clearfix">
+                        <form
+                            action="/_web/_search/api/search/new.rst?locale=zh_CN&request_locale=zh_CN&_p=YXM9MjcmdD00NTUmZD0xNTQ4JnA9MyZmPTEwNSZhPTAmbT1TTiZ8Ym5uQ29sdW1uVmlydHVhbE5hbWU9MTA1Jg__"
+                            method="post" target="_blank">
+                            <div class="search-input">
+                                <input name="keyword" class="search-title" type="text" value=""
+                                    onblur="if(this.value == '') { this.value = ''; }"
+                                    onfocus="if(this.value == '') { this.value = ''; }" placeholder="请输入关键词..." />
+                            </div>
+                            <div class="search-btn">
+                                <input name="submit" class="search-submit" type="submit" value="" />
+                            </div>
+                        </form>
+                    </div>
+                    <!--//复制以上代码到自定义搜索-->
+
+                </div>
+
+                <div class="error">
+                    <img src='./icon-error.png' alt='error'>
+                </div>
+                <div class="search">
+                    <img src='./icon-search.png' alt='search'>
+                </div>
+            </div>
+            <div class="content c">
+                <div class='aside'>
+                    <div class="m-news">
+                        <div class="title" frag="窗口60" portletmode="simpleColumnAttri">
+
+                            <h1 date_id="7511">杭电新闻</h1>
+                            <h2 class="clear">
+                                <span class="fl">IMPORTANT NEWS</span>
+                            </h2>
+
+                        </div>
+                        <div class="time-list">
+                            <div class="clear">
+                                <div class="mt">
+                                    <span class="curTime" show="0">
+                                        <font>2023</font>
+                                        <div class="cate"></div>
+                                    </span>
+                                    <div class="year scrollBar hide">
+                                        <div class='ym'>2023</div>
+                                        <div class='ym'>2022</div>
+                                        <div class='ym'>2021</div>
+                                        <div class='ym'>2020</div>
+                                        <div class='ym'>2019</div>
+                                        <div class='ym'>2018</div>
+                                        <div class='ym'>2017</div>
+                                        <div class='ym'>2016</div>
+                                        <div class='ym'>2015</div>
+                                        <div class='ym'>2014</div>
+                                        <div class='ym'>2013</div>
+                                        <div class='ym'>2012</div>
+                                        <div class='ym'>2011</div>
+                                        <div class='ym'>2010</div>
+                                        <div class='ym'>2009</div>
+                                        <div class='ym'>2008</div>
+                                        <div class='ym'>2007</div>
+                                        <div class='ym'>2006</div>
+                                        <div class='ym'>2005</div>
+                                        <div class='ym'>2004</div>
+                                        <div class='ym'>2003</div>
+                                    </div>
+                                </div>
+                                <div class="md">
+                                    <div class='mm' check='0'>1</div>
+                                    <div class='mm' check='0'>2</div>
+                                    <div class='mm' check='0'>3</div>
+                                    <div class='mm' check='0'>4</div>
+                                    <div class='mm' check='0'>5</div>
+                                    <div class='mm' check='0'>6</div>
+                                    <div class='mm' check='0'>7</div>
+                                    <div class='mm' check='0'>8</div>
+                                    <div class='mm' check='0'>9</div>
+                                    <div class='mm' check='0'>10</div>
+                                    <div class='mm' check='0'>11</div>
+                                    <div class='mm' check='0'>12</div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+
+                        </ul>
+
+                        <div class="pager">
+                            <div id="pager">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qr clear" frag="窗口07">
+
+
+                        <div class="fl">
+                            <img src="./fbeb25cf-6f3c-4062-8046-6a756f8e68b5.jpg">
+                            <p><a href='/news/2022/0916/c7529a157839/page.htm' target='_blank'
+                                    title='杭州电子科技大学官方微信'>杭州电子科技大学官方微信</a></p>
+                        </div>
+
+                        <div class="fl">
+                            <img src="./37a7f878-3e98-493e-99ea-e8a7e4d21fff.jpg">
+                            <p><a href='/news/2022/0916/c7529a157821/page.htm' target='_blank'
+                                    title='杭州电子科技大学官方微博'>杭州电子科技大学官方微博</a></p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class='article' frag="窗口6" portletmode="simpleArticleAttri">
+                    <link type="text/css" href="./159.css" rel="stylesheet" />
+
+                    <div class="title">
+                    </div>
+                    <div class="instr">
+                    </div>
+                    <div class="con">
+                        <div class='wp_articlecontent'>
+
+                            <p style="text-align:center"><img data-layer="photo" src=""
+                                    original-src="/_upload/article/images/b0/cf/f99ec901438f98a3da225c108b9b/7b27d5fc-72a7-465c-8a98-f79989af3a11_d.png"
+                                    sudyfile-attr="{'title':'图片1.png'}" id="Pic" /></p>
+                            <p>
+                                <span style="text-indent:2em;" id="content">
+
+                                </span>
+                                <br />
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cooper c" frag="窗口23">
+
+                <ul>
+
+                    <li alt="网易" data-default="./6f277614-b85e-4dc8-8bd1-0585c86116a3.jpg" data-image=""><a
+                            href='http://dy.163.com/v2/media/search?word=%BA%BC%D6%DD%B5%E7%D7%D3%BF%C6%BC%BC%B4%F3%D1%A7&cid='
+                            target='_blank'>
+                            <img src='./bottom01-r.jpg'>
+                        </a>
+                    </li>
+
+                    <li alt="http://dy.163.com/v2/media/search?word=%BA%BC%D6%DD%B5%E7%D7%D3%BF%C6%BC%BC%B4%F3%D1%A7&cid="
+                        data-default="./a06f649e-e1a3-4276-bc0b-7cc02a0efda9.jpg" data-image=""><a
+                            href='https://www.toutiao.com/c/user/6596331691/#mid=6596331691' target='_blank'>
+                            <img src='./bottom02-r.jpg'>
+                        </a>
+                    </li>
+
+                    <li alt="头条" data-default="./10bb040a-1d33-4e92-becb-61181d39a16d.jpg" data-image=""><a
+                            href='https://weibo.com/hzhdu?refer_flag=1001030103_' target='_blank'>
+                            <img src='./bottom03-r.jpg'>
+                        </a>
+                    </li>
+
+                    <li alt="https://www.toutiao.com/c/user/6596331691/#mid=6596331691"
+                        data-default="./f72d8686-1fc3-4d9f-8a62-05cfba6a601d.jpg" data-image=""><a
+                            href='http://cas.hdu.edu.cn/cas/login?service=http%3A%2F%2F106.14.9.60%3A3000%2Fcommon%2FgetTicket'
+                            target='_blank'>
+                            <img src='./bottom04-r.jpg'>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="t-c" style="position:relative;width:666px;margin:0 auto;" frag="窗口90"
+                portletmode="simpleSiteAttri">
+
+                <span id="_ideConac" style="float:left">
+                    <a href="https://bszs.conac.cn/sitename?method=show&id=DD1223430023BDB0E05310291AAC6BD6"
+                        target="_blank">
+                        <img id="imgConac" vspace="0" hspace="0" border="0" src="./blue.png"
+                            data-bd-imgshare-binded="1">
+                    </a>
+                </span>
+                <p>杭州电子科技大学党委宣传部　版权所有　杭州电子科技大学新闻中心维护</p>
+                <p>浙ICP备12028388号　推荐使用Google浏览器、火狐浏览器、360浏览器（极速模式）</p>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function load () {
+            //let data = window.location.search.substring(1).split('=')[1]
+            let params = new URLSearchParams(window.location.search)
+            let data = ["1", "newshdu"]
+            params.get('data') !== null ?
+                data[0] = (params.get('data')) : console.log("null")
+            params.get('active') !== null ?
+                data[1] = (params.get('active'))
+                : console.log(data)
+
+
+            return data
+        }
+        const content = load()
+        const url = "https://hdums.hdu.edu.cn/gw/api/" + content[1]
+        console.log("url", url)
+        const data0 = fetch(url)
+            .then(response => response.json())
+            .then(response => {
+                console.log("fetch_data", response.data)
+                data = response.data[parseInt(content[0]) - 1]
+                console.log(data)
+                document.querySelector("head title").innerHTML = data.title
+                document.querySelector(".article .title").innerHTML = data.title
+                console.log(data.title)
+                document.querySelector(".instr").innerHTML = "作者：" + data.athor + " 来源：" + data.resource + " 时间：" + data.time
+                document.querySelector("#Pic").src = "data:image/jpeg;base64," + data.picture_b64
+                document.querySelector("#content").innerHTML = data.content
+                return response.data
+            }
+            ).catch(error => console.log("fetchError", error))
+
+    </script>
+    <script type="text/javascript">
+        $('.aside .m-news li,.article .m-comp li,.article .m-media li').mouseenter(function () {
+            $(this).addClass('cur')
+            $(this).children().addClass('cur')
+        }).mouseleave(function () {
+            $(this).removeClass('cur')
+            $(this).children().removeClass('cur')
+        })
+        $('.f-nav .search').click(function () {
+            $('#find').show(0)
+            $('#find').focus()
+            $('.f-nav .error').show(0)
+            $('.f-nav ul').hide(0)
+            $('.f-nav .search').hide(0)
+        })
+        $('.f-nav .error').click(function () {
+            $('#find').val('')
+            $('#find').hide(0)
+            $('.f-nav .error').hide(0)
+            $('.f-nav ul').show(0)
+            $('.f-nav .search').show(0)
+        })
+        /*$('#find').keyup(function (event) {
+            if (event.keyCode === 13) {
+                window.location.href = "/news/_t455/ssjg/list.htm?advanced=true&keyword=" + $.trim($(this).val()) + "";
+            }
+        });*/
+
+        $('.cooper li').each(function () {
+            $(this).attr('data-image', $(this).find('img').attr('src'))
+            $(this).find('img').attr('src', $(this).attr('data-default'))
+
+        })
+        $('.cooper li').mouseenter(function () {
+            $(this).find('img').attr('src', $(this).attr('data-image'))
+        }).mouseleave(function () {
+            $(this).find('img').attr('src', $(this).attr('data-default'))
+        })
+
+        $('.aside .curTime').click(function (event) {
+            if ($(this).attr('show') === '0') {
+                $(this).children('.cate').css('transform', 'rotate(180deg)')
+                $(this).siblings('.year').slideDown(200)
+                $(this).attr('show', '1')
+            } else {
+                $(this).children('.cate').css('transform', 'rotate(0deg)')
+                $(this).siblings('.year').slideUp(200)
+                $(this).attr('show', '0')
+            }
+            event.stopPropagation()
+        })
+        $('.aside .year .ym').click(function (event) {
+            $('.aside .curTime font').html($(this).text())
+            $('.aside .curTime .cate').css('transform', 'rotate(0deg)')
+            $('.aside .year').slideUp(200)
+            $('.aside .curTime').attr('show', '0')
+            event.stopPropagation()
+        })
+        $(document).click(function () {
+            $('.aside .curTime .cate').css('transform', 'rotate(0deg)')
+            $('.aside .year').slideUp(200)
+            $('.aside .curTime').attr('show', '0')
+        })
+        var curt = $(".main .aside .m-news .title h1").text().trim()
+        $('.f-nav ul li a').each(function () {
+            if ($(this).text() == curt) {
+                $(this).parent("li").addClass("cur")
+            }
+
+        });
+    </script>
+</body>
+
+</html>
+<img src="/_visitcount?siteId=27&type=3&articleId=249859" style="display:none" width="0" height="0" />

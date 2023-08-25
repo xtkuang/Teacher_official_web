@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from "swiper"
 import '../styles/swiper1.css'
-import styles from '@/styles/components/show.module.css'
+import styles from '../styles/components/show.module.css'
 import 'swiper/css'
 import "swiper/css/navigation"
 
@@ -79,7 +79,10 @@ export default function Show () {
               console.log("nav")
               return (
                 <SwiperSlide key="index" className={styles.swiperItem}>
-                  <img src={"data:image/jpeg;base64," + item.picture_b64} alt="" />
+                  <div className={styles.bg}>
+                    <img src={"data:image/jpeg;base64," + item.picture_b64} alt="" />
+                  </div>
+
                 </SwiperSlide>
               )
             })

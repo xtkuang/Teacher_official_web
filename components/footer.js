@@ -15,7 +15,7 @@ export default function Footer () {
           </span>
           <div className="foot-content">
             <p>地址：杭州市钱塘区白杨街道2号大街1158号 邮编:310018 电话查号:86915114</p>
-            <p>党委宣传部制作维护 设计：汤程心</p>
+            <p>党委宣传部制作维护 制作：曹瀚洋 郏宣博 徐宇杰 黄佳丽 陶鑫</p>
             <p>推荐使用Google浏览器、火狐浏览器、360浏览器（极速模式）</p>
             <p>Copyright© 2010 杭州电子科技大学版权所有 All right reserved</p>
             <div style={{ textAlign: 'center', marginTop: '30px', color: 'white', width: "100%" }}>

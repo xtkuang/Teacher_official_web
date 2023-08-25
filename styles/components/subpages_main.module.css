@@ -1,0 +1,62 @@
+.word {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100% !important;
+  /* height: 13vw; */
+  padding: 1vw 0 1vw 4vw;
+}
+.title {
+  color: #0f7bde;
+  font-size: 20px;
+  font-weight: 600;
+}
+.title:hover {
+  cursor: pointer;
+  scale: 1.005;
+}
+.resource {
+  margin: 5px auto 5px 0;
+  color: #86909c;
+  font-size: 12px;
+}
+.content {
+  font-family: 'PingFang SC';
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+}
+.knowmore {
+  display: block;
+  color: #0f7bde;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: thin;
+}
+.knowmore:hover {
+  cursor: pointer;
+  scale: 1.005;
+}
+.knowmore::after {
+  font-weight: 500;
+  margin-top: 7px;
+  position: absolute;
+  margin-left: 10px;
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #0f7bde;
+  border-right: 1px solid #0f7bde;
+  transform: rotate(45deg);
+}
+.picture {
+  /* flex: 3; */
+  /* margin-top: 12px; */
+  /* width: 10px; */
+  /* height: 100%; */
+}
+.picture img {
+  max-height: 13vw;
+}
