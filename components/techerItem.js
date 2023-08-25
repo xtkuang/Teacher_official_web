@@ -1,5 +1,6 @@
 import styles from '../styles/components/teacher.module.css'
 import { useState } from 'react'
+import '../styles/scollerbar.css'
 function Toteacher (num) {
   window.location.href = 'https://hdums.hdu.edu.cn/home?num=' + encodeURIComponent(num)
 }

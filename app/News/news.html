@@ -317,7 +317,7 @@
                 document.querySelector("head title").innerHTML = data.title
                 document.querySelector(".article .title").innerHTML = data.title
                 console.log(data.title)
-                document.querySelector(".instr").innerHTML = "作者：" + data.athor + " 来源：" + data.resource + " 时间：" + data.time
+                document.querySelector(".instr").innerHTML = "作者：" + data.author + " 来源：" + data.resource + " 时间：" + data.time
                 document.querySelector("#Pic").src = "data:image/jpeg;base64," + data.picture_b64
                 document.querySelector("#content").innerHTML = data.content
                 return response.data

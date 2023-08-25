@@ -1,0 +1,18 @@
+#prof::-webkit-scrollbar {
+  height: 21.1719vw;
+  background-color: rgba(233, 235, 237, 0);
+  width: 0.3906vw;
+}
+#prof::-webkit-scrollbar-track {
+  border-radius: 0.7031vw;
+  background-color: #e9ebed;
+  width: 0.3906vw;
+}
+#prof::-webkit-scrollbar-thumb {
+  height: 7.5781vw;
+  border-radius: 0.7031vw;
+  background-color: #a5c7fa;
+}
+#prof::-webkit-scrollbar-button {
+  height: 1.2019vh;
+}
